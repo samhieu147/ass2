@@ -31,7 +31,8 @@ header{
     padding-top: 5px;
 }
 .header__search select{
-   border: #f7f7f7 2px solid;
+    background: var(--color--header);
+   border: var(--color--header) 2px solid;
 }
 .header__search input{
     border-radius: 5px;
@@ -99,7 +100,15 @@ header{
     color: #768be5;
 }
 .course-price{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+.course-price__new{
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+.course-price__old{
+    text-decoration: line-through;
 }
 .course-item__btn{
     background: #c6c7cc;
@@ -238,30 +247,32 @@ header{
 /*SUBSCRIBE*/
 .sub{
   background: var(--color--sub);
-  padding: 5px;
-  text-align: center;
+  padding: 10px;
+  text-align: left;
 }
-.subscribe--item{
-    color:#e6e6e6;
-}
-.subscribe--item__btn{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-.subsribe__text{
-    background: var(--color--sub);
-    text-align: left;
-    border-radius: 10px;
-    border : white 1px solid;
-}
-.sub__link{
-    background:white;
-    padding: 5px;
-    text-decoration: none;
-    border-radius: 5px;
-    color: black;
-    margin-left: 10px;
+.sub_title{
+    color: #e6e6e6;
     font-weight: 500;
+    margin-right: 10px;
+}
+.sub__email{
+    background: var(--color--sub);
+    border : white 1px solid ;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+::-webkit-input-placeholder {
+    color: #e6e6e6;
+}
+.sub__btn{
+    font-weight: 600;
+    text-align: center;
+    color: #252526;
+    background: #e6e6e6;
+    padding: 10px;
+    border-radius: 10px;
+    border :  #e6e6e6 1px solid;
 }
 
 
@@ -343,10 +354,8 @@ footer{
         width: 150px;
         height: 150px;
     }
-    .subscribe--item{
-        display: flex;
-        justify-content: center;
-        color: #e6e6e6;
+    .sub{
+        text-align: center;
     }
     .short-about__item{
         max-width:200px;
